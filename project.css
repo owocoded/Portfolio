@@ -1,0 +1,209 @@
+body {
+  background-color: black;
+}
+.head {
+  color: hsl(42, 63%, 48%);
+  text-align: center;
+}
+.grid-container > p, a, h5{
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 0.5fr; /* let rows be flexible but equal */
+  grid-template-areas:
+    "item7 item10 item19 item24 item25 item26"
+    "item5 item27 item8 item2 item15 item3"
+    "item13 item14 item11 item16 item17 item18"
+    "item12 item20 item1 item22 item23 item4"
+    "item9 item6 item21 . . .";
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+.grid-item1 {
+  grid-area: item1;
+}
+.grid-item2 {
+  grid-area: item2;
+}
+.grid-item3 {
+  grid-area: item3;
+}
+.grid-item4 {
+  grid-area: item4;
+}
+.grid-item5 {
+  grid-area: item5;
+}
+.grid-item6 {
+  grid-area: item6;
+}
+.grid-item7 {
+  grid-area: item7;
+}
+.grid-item8 {
+  grid-area: item8;
+}
+.grid-item9 {
+  grid-area: item9;
+}
+.grid-item10 {
+  grid-area: item10;
+}
+.grid-item11 {
+  grid-area: item11;
+}
+.grid-item12 {
+  grid-area: item12;
+}
+.grid-item13 {
+  grid-area: item13;
+}
+.grid-item14 {
+  grid-area: item14;
+}
+.grid-item15 {
+  grid-area: item15;
+}
+.grid-item16 {
+  grid-area: item16;
+}
+.grid-item17 {
+  grid-area: item17;
+}
+.grid-item18 {
+  grid-area: item18;
+}
+.grid-item19 {
+  grid-area: item19;
+}
+.grid-item20 {
+  grid-area: item20;
+}
+.grid-item21 {
+  grid-area: item21;
+}
+.grid-item22 {
+  grid-area: item22;
+}
+.grid-item23 {
+  grid-area: item23;
+}
+.grid-item24 {
+  grid-area: item24;
+}
+.grid-item25 {
+  grid-area: item25;
+}
+.grid-item26 {
+  grid-area: item26;
+}
+.grid-item27 {
+  grid-area: item27;
+}
+
+.grid-container > div {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  /* overflow: hidden; */
+  padding: 1rem;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: auto;
+  /* keep a consistent visual height using aspect-ratio; adjust as needed */
+}
+
+.grid-container > div:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.grid-container img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover; /* ensures image fills the area without stretching */
+}
+
+/* Responsive breakpoints: tablet and mobile layouts using template areas */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "item10 item25 item7"
+      "item26 item19 item24"
+      "item5 item27 item8"
+      "item15 item2 item3"
+      "item18 item11 item4"
+      "item16 item17 item13"
+      "item12  item20 item21"
+      "item22 item23 item6"
+      "item14 item1 item9";
+  }
+  .grid-container > div {
+    /* aspect-ratio: 4 / 3; */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    /* overflow: hidden; */
+    padding: 1rem;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6"
+      "item7"
+      "item8"
+      "item9"
+      "item10"
+      "item11"
+      "item12"
+      "item13"
+      "item14"
+      "item15"
+      "item16"
+      "item17"
+      "item18"
+      "item19"
+      "item20"
+      "item21"
+      "item22"
+      "item23"
+      "item24"
+      "item25"
+      "item26"
+      "item27";
+  }
+  .grid-container > div {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    /* overflow: hidden; */
+    padding: 1rem;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: auto;
+  }
+  /* .grid-container > div {
+    aspect-ratio: 16 / 9; /* taller on small screens to improve readability */
+  }

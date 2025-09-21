@@ -1,7 +1,7 @@
 # Portfolio Website
 
 ## Description
-This is my personal **portfolio website** built using **HTML**, **CSS**, and **JavaScript**. It showcases the projects I have developed over the years as a web developer. The portfolio is designed to provide an interactive and user-friendly experience, enabling visitors to easily learn more about me and my .
+This is my personal **portfolio website** built using **HTML**, **CSS**, and **JavaScript**. It showcases the projects I have developed over the years as a web developer. The portfolio is designed to provide an interactive and user-friendly experience, enabling visitors to easily learn more about me.
 
 ## Features
 - Clean and responsive design for all screen sizes.

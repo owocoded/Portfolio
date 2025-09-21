@@ -109,9 +109,9 @@ p {
   color: var(--clr-grey-5);
 }
 .nav-logo{
-    width: 50%;
-    margin: 0;
-    padding: 0;
+  width: 50%;
+  margin: 0; 
+  padding: 0;
 }
 .social-icon img{
   width: 20px;
@@ -225,7 +225,7 @@ Navbar
 .nav-btn{
   background: transparent;
   border-color: transparent;
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-4);
   font-size: 2rem;
   cursor: pointer;
   justify-self: end;
